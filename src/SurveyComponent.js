@@ -12,14 +12,17 @@ const SurveyComponent = () => {
         "logoPosition": "right",
         "pages": [
             {
-                "name": "page1",
+                "name": "Enter your Email address",
                 "elements": [
                     {
-                        "type": "html",
+                        "type": "text",
                         "name": "question1",
-                        "html": "<ol>\n     <li>(1). <strong>Personally</strong>, you have received an award that is especially meaningful to you.</li> <br>\n<li>(2). <strong>Vocationally,</strong> perhaps you have received a pattern of achievement when it comes to productivity, sales, or leadership [eg. Employee/salesman of the month]</li> <br>\n<li>(3). <strong>Relationally,</strong> you may enjoy a godly marriage or benefit from a friendship that comforts you in difficult times or challenges you to strive for excellence in everything you do. <li> <br>\n<li>(4). <strong>Educationally,</strong> perhaps you have an academic degree(s) or training certificates(s), or perhaps you are pursuing ongoing development in areas of special interest.<li>   <br>\n<li>(5). <strong>Spiritually,</strong> you may have a history of success in sharing your faith or leading Christians to depper insights about their own faith. Or perhaps your own acceptance of Christ and Spiritual growth give you as sense of having attained something beyond measure.</li> \n</ol>"
+                        "title": "Enter Your Email Address:",
+                        "isRequired": true,
+                        "inputType": "email"
                     }
-                ]
+                ],
+                "title": "Enter your Email address"
             },
             {
                 "name": "page2",
@@ -28,15 +31,23 @@ const SurveyComponent = () => {
                         "type": "multipletext",
                         "name": "Personal Achievements",
                         "title": "Personal Achievements:",
-                        "isRequired": true,
+                        "description": "Personally, you have received an award that is especially meaningful to you.",
                         "items": [
                             {
-                                "name": "1.",
+                                "name": "text1",
                                 "title": "1."
                             },
                             {
-                                "name": "2.",
+                                "name": "text2",
                                 "title": "2."
+                            },
+                            {
+                                "name": "text3",
+                                "title": "3."
+                            },
+                            {
+                                "name": "text4",
+                                "title": "4."
                             }
                         ]
                     },
@@ -44,15 +55,23 @@ const SurveyComponent = () => {
                         "type": "multipletext",
                         "name": "Vocational Achievements",
                         "title": "Vocational Achievements:",
-                        "isRequired": true,
+                        "description": "perhaps you have received a pattern of achievement when it comes to productivity, sales, or leadership [eg. Employee/salesman of the month]",
                         "items": [
                             {
-                                "name": "1.",
+                                "name": "text1",
                                 "title": "1."
                             },
                             {
-                                "name": "2.",
+                                "name": "text2",
                                 "title": "2."
+                            },
+                            {
+                                "name": "text3",
+                                "title": "3."
+                            },
+                            {
+                                "name": "text4",
+                                "title": "4."
                             }
                         ]
                     },
@@ -60,15 +79,23 @@ const SurveyComponent = () => {
                         "type": "multipletext",
                         "name": "Relational Achievements",
                         "title": "Relational Achievements:",
-                        "isRequired": true,
+                        "description": "you may enjoy a godly marriage or benefit from a friendship that comforts you in difficult times or challenges you to strive for excellence in everything you do. ",
                         "items": [
                             {
-                                "name": ".1",
+                                "name": "text1",
                                 "title": "1."
                             },
                             {
-                                "name": "2.",
+                                "name": "text2",
                                 "title": "2."
+                            },
+                            {
+                                "name": "text3",
+                                "title": "3."
+                            },
+                            {
+                                "name": "text4",
+                                "title": "4."
                             }
                         ]
                     },
@@ -76,15 +103,23 @@ const SurveyComponent = () => {
                         "type": "multipletext",
                         "name": "Educational Achievements",
                         "title": "Educational Achievements:",
-                        "isRequired": true,
+                        "description": "Perhaps you have an academic degree(s) or training certificates(s), or perhaps you are pursuing ongoing development in areas of special interest.",
                         "items": [
                             {
-                                "name": "1.",
+                                "name": "text1",
                                 "title": "1."
                             },
                             {
-                                "name": "2.",
+                                "name": "text2",
                                 "title": "2."
+                            },
+                            {
+                                "name": "text3",
+                                "title": "3."
+                            },
+                            {
+                                "name": "text4",
+                                "title": "4."
                             }
                         ]
                     },
@@ -92,15 +127,23 @@ const SurveyComponent = () => {
                         "type": "multipletext",
                         "name": "Spiritual Achievements",
                         "title": "Spiritual Achievements:",
-                        "isRequired": true,
+                        "description": "you may have a history of success in sharing your faith or leading Christians to deeper insights about their own faith. Or perhaps your own acceptance of Christ and Spiritual growth give you as sense of having attained something beyond measure.",
                         "items": [
                             {
-                                "name": "1.",
+                                "name": "text1",
                                 "title": "1."
                             },
                             {
-                                "name": "2.",
+                                "name": "text2",
                                 "title": "2."
+                            },
+                            {
+                                "name": "text3",
+                                "title": "3."
+                            },
+                            {
+                                "name": "text4",
+                                "title": "4."
                             }
                         ]
                     }
@@ -111,21 +154,9 @@ const SurveyComponent = () => {
                 "name": "page3",
                 "elements": [
                     {
-                        "type": "text",
-                        "name": "Area of Help-1",
-                        "title": "Area of Help-1:",
-                        "isRequired": true
-                    },
-                    {
-                        "type": "text",
-                        "name": "Area of Help-2",
-                        "title": "Area of Help-2:",
-                        "isRequired": true
-                    },
-                    {
-                        "type": "text",
-                        "name": "Area of Help-3",
-                        "title": "Area of Help-3:",
+                        "type": "comment",
+                        "name": "Area-1",
+                        "title": "Enter the name of the areas:",
                         "isRequired": true
                     }
                 ],
@@ -138,13 +169,22 @@ const SurveyComponent = () => {
                         "type": "multipletext",
                         "name": "Personal Points of Pain",
                         "title": "Personal Points of Pain ",
-                        "isRequired": true,
                         "items": [
                             {
-                                "name": "text1"
+                                "name": "text1",
+                                "title": "1."
                             },
                             {
-                                "name": "text2"
+                                "name": "text2",
+                                "title": "2."
+                            },
+                            {
+                                "name": "text3",
+                                "title": "3."
+                            },
+                            {
+                                "name": "text4",
+                                "title": "4."
                             }
                         ]
                     },
@@ -152,26 +192,44 @@ const SurveyComponent = () => {
                         "type": "multipletext",
                         "name": "Vocational Points of Pain",
                         "title": "Vocational Points of Pain ",
-                        "isRequired": true,
                         "items": [
                             {
-                                "name": "text1"
+                                "name": "text1",
+                                "title": "1."
                             },
                             {
-                                "name": "text2"
+                                "name": "text2",
+                                "title": "2."
+                            },
+                            {
+                                "name": "text3",
+                                "title": "3."
+                            },
+                            {
+                                "name": "text4",
+                                "title": "4."
                             }
                         ]
                     },
                     {
                         "type": "multipletext",
                         "name": "Relational Points of Pain",
-                        "isRequired": true,
                         "items": [
                             {
-                                "name": "text1"
+                                "name": "text1",
+                                "title": "1."
                             },
                             {
-                                "name": "text2"
+                                "name": "text2",
+                                "title": "2."
+                            },
+                            {
+                                "name": "text3",
+                                "title": "3."
+                            },
+                            {
+                                "name": "text4",
+                                "title": "4."
                             }
                         ]
                     },
@@ -179,13 +237,22 @@ const SurveyComponent = () => {
                         "type": "multipletext",
                         "name": "Educational Points of Pain",
                         "title": "Educational Points of Pain",
-                        "isRequired": true,
                         "items": [
                             {
-                                "name": "text1"
+                                "name": "text1",
+                                "title": "1."
                             },
                             {
-                                "name": "text2"
+                                "name": "text2",
+                                "title": "2."
+                            },
+                            {
+                                "name": "text3",
+                                "title": "3."
+                            },
+                            {
+                                "name": "text4",
+                                "title": "4."
                             }
                         ]
                     },
@@ -193,13 +260,22 @@ const SurveyComponent = () => {
                         "type": "multipletext",
                         "name": "Spiritual Points of Pain",
                         "title": "Spiritual Points of Pain",
-                        "isRequired": true,
                         "items": [
                             {
-                                "name": "text1"
+                                "name": "text1",
+                                "title": "1."
                             },
                             {
-                                "name": "text2"
+                                "name": "text2",
+                                "title": "2."
+                            },
+                            {
+                                "name": "text3",
+                                "title": "3."
+                            },
+                            {
+                                "name": "text4",
+                                "title": "4."
                             }
                         ]
                     }
@@ -210,21 +286,9 @@ const SurveyComponent = () => {
                 "name": "page5",
                 "elements": [
                     {
-                        "type": "text",
-                        "name": "Area of Help-4",
-                        "title": "Area of Help-4",
-                        "isRequired": true
-                    },
-                    {
-                        "type": "text",
-                        "name": "Area of Help-5",
-                        "title": "Area of Help-5",
-                        "isRequired": true
-                    },
-                    {
-                        "type": "text",
-                        "name": "Area of Help-6",
-                        "title": "Area of Help-6",
+                        "type": "comment",
+                        "name": "Enter the name of the areas",
+                        "title": "Enter the name of the areas",
                         "isRequired": true
                     }
                 ],
@@ -259,7 +323,8 @@ const SurveyComponent = () => {
             }
         });
 
-        pdf.save('survey_result.pdf');
+        pdf.save('experience.pdf');
+
     };
 
     return <Survey json={surveyJSON} onComplete={onCompleteSurvey} />;
